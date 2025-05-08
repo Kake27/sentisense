@@ -19,7 +19,7 @@ SentiSense is a full-stack web app that scrapes comments from popular platforms 
 
 | Layer        | Tech Used                      |
 |--------------|-------------------------------|
-| **Frontend** | *(Not included here)*         |
+| **Frontend** | React.js, axios       |
 | **Backend**  | FastAPI, Uvicorn              |
 | **Modeling** | TensorFlow (Keras), Tokenizer, HuggingFace Transformers |
 | **Scraping** | yt-dlp (Youtube) and praw (Reddit)        |
@@ -30,7 +30,7 @@ SentiSense is a full-stack web app that scrapes comments from popular platforms 
 
 ## ⚙️ Installation & Usage
 ### 1) Clone the repo:
-       Run git clone https://github.com/yourusername/sentisense.git in the console
+       git clone https://github.com/yourusername/sentisense.git in the console
        Change to the project directory: cd sentisense
 ### 2) Create the virtual environment:
        python -m venv venv
@@ -38,14 +38,15 @@ SentiSense is a full-stack web app that scrapes comments from popular platforms 
 ### 3) Install dependencies:
        Change the directory to backend
        pip install -r requirements.txt
-### 4) Add your .env variables:
+### 4) Add .env variables:
        Get your client id, client secret by registering an app on Reddit and add them to the file
        Also add your GenAI API key 
 ### 5) Run the backend server:
-       Run uvicorn runserver:app --reload
+       uvicorn runserver:app --reload
 ### 6) Install frontend dependencies:
-       Change to the frontend directory and run npm i
+       Change to the frontend directory 
+       Run npm i
 ### 7) Run frontend server:
-       Run npm run dev
+       npm run dev
 
 
