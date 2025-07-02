@@ -164,7 +164,7 @@ function Clusters() {
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {clusterData.map((row, index) => (
-                    row.sentiment=="Negative" && (
+                    row.sentiment=="Neutral" && (
                         <div key={index} className="bg-blue-500/5 rounded-lg p-4 border border-blue-500/10">
                             <p className="text-gray-300 text-sm">{row.comment}</p>
                         </div>   
