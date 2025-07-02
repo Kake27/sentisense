@@ -1,6 +1,6 @@
 # 🎯 SentiSense – Comment Sentiment Analyzer & Insights Engine
 
-SentiSense is a full-stack web app that scrapes comments from popular platforms like YouTube, and Reddit, performs deep sentiment analysis using a custom-trained NLP model, clusters the results, and provides AI-powered suggestions for improvement using Gemini AI.
+SentiSense is a full-stack sentiment analysis web application that scrapes comments from platforms like YouTube and Reddit, analyzes them using a custom-trained BiLSTM model, and offers meaningful insights, including visual sentiment trends, clustering, and AI-powered suggestions via Gemini API.
 
 ---
 
@@ -30,13 +30,15 @@ SentiSense is a full-stack web app that scrapes comments from popular platforms 
 
 ## ⚙️ Installation & Usage
 ### 1) Clone the repo:
-       git clone https://github.com/yourusername/sentisense.git in the console
-       Change to the project directory: cd sentisense
+       git clone https://github.com/Kake27/sentisense
+       cd sentisense
 ### 2) Create the virtual environment:
        python -m venv venv
        venv\Scripts\activate
 ### 3) Install dependencies:
-       Change the directory to backend
+       cd backend
+       python -m venv venv
+       venv\Scripts\activate
        pip install -r requirements.txt
 ### 4) Add .env variables:
        Get your client id, client secret by registering an app on Reddit and add them to the file
@@ -44,8 +46,8 @@ SentiSense is a full-stack web app that scrapes comments from popular platforms 
 ### 5) Run the backend server:
        uvicorn runserver:app --reload
 ### 6) Install frontend dependencies:
-       Change to the frontend directory 
-       Run npm i
+       cd ../frontend
+       npm install
 ### 7) Run frontend server:
        npm run dev
 
